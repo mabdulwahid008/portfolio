@@ -1,6 +1,6 @@
 import './App.css';
 import Hero from './components/hero/Hero';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import AnimatedRoutes from './AnimatedRoutes';
 
 function App() {
