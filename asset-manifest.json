@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.633f9029.css",
+    "main.js": "/portfolio/static/js/main.21cce5d8.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/capeyamu.PNG": "/portfolio/static/media/capeyamu.98e4b545cd03a6fac571.PNG",
+    "static/media/interior.PNG": "/portfolio/static/media/interior.83ad0a777f9c6fcb70c5.PNG",
+    "static/media/yachtsales.PNG": "/portfolio/static/media/yachtsales.d0aed0a50e5274c3aa7e.PNG",
+    "static/media/alphaman.PNG": "/portfolio/static/media/alphaman.184cb329ff2f8b04a71d.PNG",
+    "static/media/fitness.PNG": "/portfolio/static/media/fitness.97ab7c09c8214cc96ca3.PNG",
+    "static/media/me.jpg": "/portfolio/static/media/me.4c7f3172f9e308339ab5.jpg",
+    "static/media/comfortsheild.PNG": "/portfolio/static/media/comfortsheild.7d72c088331094ce7da0.PNG",
+    "static/media/express.png": "/portfolio/static/media/express.9d8d22a4d1ed87f1befe.png",
+    "index.html": "/portfolio/index.html",
+    "main.633f9029.css.map": "/portfolio/static/css/main.633f9029.css.map",
+    "main.21cce5d8.js.map": "/portfolio/static/js/main.21cce5d8.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633f9029.css",
+    "static/js/main.21cce5d8.js"
+  ]
+}
