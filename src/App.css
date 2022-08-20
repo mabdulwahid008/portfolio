@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Noto+Serif&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+:root{
+    --baseColor:black;
+    --black : rgb(12, 12, 12);
+    --white : rgb(245, 245, 245);
+    --yellow : rgb(255, 0, 85);
+    /* --yellow : #D7B941; */
+    --styleFont : 'Playfair Display SC', serif;
+    --headingFont : 'Noto Serif', serif;
+    --paraFont : 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  background-color: var(--baseColor);
+  color: var(--white);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--headingFont);
+}
+
+p{
+  font-family: var(--paraFont);
+}
+
+li{
+  font-family: var(--headingFont);
+}
+
+.btn{
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-family: var(--headingFont);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 2px;
+  transition: .3s ease;
+  outline: none;
+  transition: .7s ease;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+}
+.btn:hover{
+  color: var(--black);
+  box-shadow: 0px 4px 10px var(--yellow);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+.btn:active{
+  border: none;
+  outline: none;
+}
+
+a, a:hover, a:active{
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.blur{
+  position: absolute;
+  background-size: calc(0,0, 0,);
+  background-color: var(--yellow);
+  width: 200px;
+  height: 200px;
+  filter: blur(150px);
+  z-index: -9;
+  transition: .7s ease;
+  animation: zoom 5s infinite linear;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content{
+  margin-left:80px;
+  transition: all ease .3s;
+}
+#toggle:checked ~ .content{
+  margin-left: 270px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Track */
+::-webkit-scrollbar-track {
+  background:var(--baseColor);
+  width: 10px
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--yellow);
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow)
+}
+
+@media screen  and (max-width:768px) {
+  #toggle:checked ~ .content{
+    margin-left: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  body{
+    overflow-y: auto;
+   
   }
 }

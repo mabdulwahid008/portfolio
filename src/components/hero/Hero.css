@@ -1,0 +1,218 @@
+.aside{
+    height: 627px;
+    position: fixed;
+    top: 0;
+    width: 70px;
+    background-color: var(--black);
+    transition: .3s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+.nav-btn{
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+ .nav-btn>span{
+    position: fixed;
+    height: 2px;
+    width: 30px;
+    background-color: var(--white);
+    transition: .3s ease;
+}
+.nav-btn>span::before,
+.nav-btn>span::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    top: -10px;
+    left: 15px;
+    background-color: var(--white);
+}
+.nav-btn>span::after{
+    top: 10px;
+    left: 0px;
+} 
+
+#toggle{
+    opacity: 0;
+}
+#toggle:checked + .nav-btn>span{
+    transform: rotate(-45deg);
+}
+#toggle:checked + .nav-btn>span::before{
+    transform: rotate(98deg);
+    width: 30px;
+    top: 0px;
+    left: 0px;
+}
+#toggle:checked + .nav-btn>span::after{
+    display: none;
+    transform: rotate(98deg);
+    top: 7px;
+    left: 6px;
+}
+#toggle:checked ~ .aside {
+    width: 250px;
+}
+
+label{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+}
+
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 87px;
+}
+.logo::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: -8px;
+    left: -16px;
+    border-bottom: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);;
+    transition: .7 ease;
+}
+.logo::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: -12px;
+    border-top: 5px solid var(--yellow);
+    border-right: 5px solid var(--yellow);
+    transition: .7 ease;
+}
+.logo>h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--styleFont);
+}
+.nav{
+    margin-top: 180px;
+    padding: 50px 22px;
+    list-style: none;
+}
+.nav>a>li{
+    margin-left: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .5s ease;
+    color: var(--white);
+}
+.nav>a:hover,
+.nav>a:active{
+    color: var(--yellow);
+    transition: .7 ease;
+    text-decoration: none;
+}
+
+.icons{
+    font-size: 25px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+    color: var(--white);
+}
+.active{
+    color: var(--yellow);
+    transition: .7s ease;
+}
+
+.color-toggle{
+    position: fixed;
+    cursor: pointer;
+    top: 40px;
+    right: 30px;
+    font-size: 22px;
+    color: white;
+    animation: rotation 5s infinite linear;
+    z-index: 1;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .color-palette{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      width: 0px;
+      height: 30px;
+      background-color: transparent;
+      box-shadow: 10px 10px 20px var(--black);
+      border-radius: 10px;
+      position: fixed;
+      top: 35px;
+      right: 30px;
+      transition: .3s ease-in;
+      z-index: 0;
+  }
+  .color-palette>span{
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+  }
+  .color-palette>span:nth-of-type(1){
+    background-color: #F2AA4CFF;
+  }
+  .color-palette>span:nth-of-type(2){
+    background-color: rgb(180, 36, 173)
+  }
+  .color-palette>span:nth-of-type(3){
+    background-color: rgb(255, 0, 85)
+  }
+  .color-palette>span:nth-of-type(4){
+    background-color:#1cda91;
+  }
+  .color-palette>span:nth-of-type(5){
+    background-color: rgb(0, 193, 251)
+  }
+  #color_toggle{
+      opacity: 0;
+  }
+  #color_toggle:checked ~ .color-palette{
+      width: 150px;
+      padding: 5px 10px;
+      right: 70px;
+  }
+  .blur-hero{
+      width: 80px;
+      height: 80px;
+      filter: blur(50px);
+      right: -200px;
+      bottom: -40px;
+      transition: .7s ease-in;
+  }
+  #toggle:checked ~ .aside>.blur-hero{
+    right: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .aside{
+          height: 800px;
+      }
+  }
