@@ -215,4 +215,7 @@ label{
       .aside{
           height: 800px;
       }
+      .color-palette{
+          background-color: var(--black);
+      }
   }

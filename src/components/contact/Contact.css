@@ -171,6 +171,7 @@ form>div:nth-of-type(1){
     font-family: var(--paraFont);
     font-size: 14px;
     font-weight: 400;
+    z-index: 0;
     transition: top .25s ease,
                 left .25s ease,
                 font-size .25s ease;
