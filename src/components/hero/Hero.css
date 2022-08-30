@@ -168,7 +168,7 @@ label{
       top: 35px;
       right: 30px;
       transition: .3s ease-in;
-      z-index: 0;
+      z-index: 1;
   }
   .color-palette>span{
       border-radius: 5px;
