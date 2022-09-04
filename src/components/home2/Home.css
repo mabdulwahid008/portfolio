@@ -1,49 +1,36 @@
 .home{
     display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
+    gap: 100px;
+    padding: 150px 100px;
     align-items: center;
-    height: 600px;
-    padding: 0 100px;
 }
-
-.left-h{
-    width: 60%;
-}
-
-.left-h>h3{
+.home-left>h3{
     font-size: 40px;
 }
-.left-h>h3>span{
+.home-left>h3>span{
     font-size: 38px;
     font-weight: 600;
     font-family: var(--styleFont);
     color: var(--yellow);
     transition: .7s ease;
 }
-
-.left-h>h4{
+.home-left>h4{
     font-size: 25px;
 }
-.left-h>h4>span{
+.home-left>h4>span{
     color: var(--yellow);
     transition: .7s ease;
 }
-
-.left-h>p{
+.home-left>p{
     width: 500px;
 }
 
-.right-h{
-    width: 40%;
-}
 
-.right-h>div{
+.home-right>div{
     position: relative;
     margin-top: -190px;
 }
-.right-h>div>img{
+.home-right>div>img{
     height: 400px;
     object-fit: cover;
     position: absolute;
@@ -53,7 +40,7 @@
     border-radius: 2px;
 }
 
-.right-h>div>div{
+.home-right>div>div{
     position: absolute;
     top: 20px;
     left: 20px;
@@ -64,51 +51,38 @@
     z-index: 0; 
     border-radius: 2px;
 }
-.blur-h{
-    position: fixed;
-    top: 0;
-    left: 0;
-}
 
 @media screen and (max-width:768px) {
     .home{
         flex-direction: column;
-        padding: 0px 10px;
+        padding: 20px 20px 100px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .home-left>p{
         width: 100%;
     }
-    .left-h{
-        width: 100%;
-    }
-    .left-h>h3{
+    .home-left>h3{
         font-size: 38px;
     }
-    .left-h>h3>span{
+    .home-left>h3>span{
         font-size: 33px;
-        font-weight: 600;
-        font-family: var(--styleFont);
-        color: var(--yellow);
     }
-    
-    .left-h>h4{
+    .home-left>h4{
         font-size: 20px;
     }
-    .left-h>p{
-        width: 250px;
+    .home-right>div{
+        left: -120px;
+        top: 150px;
     }
-    .right-h{
-        width: 100%;
-        margin-bottom: 100px;
-    }
-    .right-h>div{
-        margin-top: 0px;
-    }
-    .right-h>div>img{
+    .home-right>div>img{
         height: 350px;
+        left: -10px;
     }
-    .right-h>div>div{
-        height: 355px;
+    .home-right>div>div{
         width: 235px;
+        height: 355px;
+        left: 10px;
+        bottom: 50px;
     }
 }
-
-

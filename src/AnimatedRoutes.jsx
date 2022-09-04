@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import About from './components/about/About'
-import Home from './components/home/Home'
+import Home from './components/home2/Home'
 import { AnimatePresence } from 'framer-motion'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
