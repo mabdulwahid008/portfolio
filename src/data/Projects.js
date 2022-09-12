@@ -5,6 +5,7 @@ import yachts from '../images/yachtsales.PNG'
 import capeyamu from '../images/capeyamu.PNG'
 import comfortSheild from '../images/comfortsheild.PNG'
 import express from '../images/express.png'
+import project from '../images/project.png'
 
 
 export const Projects = [
@@ -21,6 +22,13 @@ export const Projects = [
         description: 'The static web page is designed with React Js, and other React libraries to have better user experience.',
         url : 'https://mabdulwahid008.github.io/interior-app/',
         tag : 'React-Js'
+    },
+    {
+        image : project,
+        name: 'Emeployer Space',
+        description: 'This Project is API based developed for my semester project, Developed on Express JS and PostgreSQL.',
+        url : 'https://github.com/mabdulwahid008/express-js',
+        tag : 'express'
     },
     {
         image : fitness,

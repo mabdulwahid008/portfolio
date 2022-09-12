@@ -93,6 +93,14 @@ function About() {
             </div>
             <div>
                 <div>
+                  <p>Next Js</p>
+                </div>
+                <div className="progress-bar">
+                  <motion.div initial={{width:'0px'}} animate={{width:'70%', transition:{duration:.9, delay:1}}} className="proress-value" ></motion.div>
+                </div>
+            </div>
+            <div>
+                <div>
                   <p>OOP & Data Structures</p>
                 </div>
                 <div className="progress-bar">
@@ -109,14 +117,6 @@ function About() {
             </div>
             <div>
                 <div>
-                  <p>Bootstrap</p>
-                </div>
-                <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'70%', transition:{duration:.9, delay:1}}} className="proress-value" ></motion.div>
-                </div>
-            </div>
-            <div>
-                <div>
                   <p>Github</p>
                 </div>
                 <div className="progress-bar">
@@ -128,7 +128,7 @@ function About() {
       </div>
 
       <div className='a-buttons'>
-        <button className='btn'>Downlowd CV</button>
+        <a href='CV-MAbdulwahid.pdf' download='CV-MAbdulwahid.pdf'><button className='btn'>Downlowd CV</button></a>
         <Link to='/contact'><button className='btn'>Hire  ME</button></Link>
       </div>
       {/* <div className="blur blur-a"></div> */}
