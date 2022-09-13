@@ -148,6 +148,7 @@
 @media screen and  (max-width:768px) {
     .portfolio{
         padding: 0px 10px;
+        height: 700px;
     }
     .p-buttons{
         flex-wrap: wrap;
