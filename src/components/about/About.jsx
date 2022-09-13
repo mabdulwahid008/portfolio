@@ -128,7 +128,7 @@ function About() {
       </div>
 
       <div className='a-buttons'>
-        <a href='CV-MAbdulwahid.pdf' download='CV-MAbdulwahid.pdf'><button className='btn'>Downlowd CV</button></a>
+        <a href='CV-MAbdulwahid.pdf' download='CV-MAbdulwahid.pdf'><button className='btn'>Resume</button></a>
         <Link to='/contact'><button className='btn'>Hire  ME</button></Link>
       </div>
       {/* <div className="blur blur-a"></div> */}
