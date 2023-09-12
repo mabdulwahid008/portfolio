@@ -100,7 +100,7 @@
 }
 .projects>div:hover .p-content{
     opacity: 1;
-    height: 150px;
+    height: 170px;
 }
 .p-content-section{
     display: flex;

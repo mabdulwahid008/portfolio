@@ -11,7 +11,16 @@ function Portfolio() {
             setProjects(Projects);
             return;
         }
-        const newProjects = Projects.filter((p)=>{ return p.tag === tag})
+        tag = tag.split(',')
+        console.log(tag);
+        let newProjects = []
+            for (let i = 0; i < tag.length; i++) {
+                let x = Projects.filter((p)=>{ return p.tag.includes( tag[i] )})
+                console.log(x);
+                for (let j = 0; j < x.length; j++) {
+                    newProjects.push(x[j])
+                }
+            }
         setProjects(newProjects)
     }
   return (
@@ -23,9 +32,10 @@ function Portfolio() {
         </div>
         <div className='p-buttons'>
             <button onClick={()=>{handleProjects('All')}}>All</button>
+            <button onClick={()=>{handleProjects('Web3')}}>Web3</button>
+            <button onClick={()=>{handleProjects('PERN')}}>PERN Stack</button>
             <button onClick={()=>{handleProjects('React-Js')}}>React JS</button>
             <button onClick={()=>{handleProjects('express')}}>Express JS</button>
-            <button onClick={()=>{handleProjects('WordPress')}}>WordPress</button>
         </div>
         <div className="projects">
             {projects.map(project=>{

@@ -12,7 +12,8 @@ function About() {
           <motion.span initial={{width:'0px'}} animate={{width:'80px', transition:{duration:1.5, ease:'easeIn'}}}></motion.span>
           <motion.span initial={{width:'0px'}} animate={{width:'50px', transition:{duration:1.5, ease:'easeIn'}}}></motion.span>
           <h4>My name is Muhammad Abdulwahid and <span>I develop websites.</span></h4>
-          <p>I am student of Software Engineering and persuded my interest in website development and designing. I have developed websites on WordPress with Elementor and Woo Commerce Plugins. Now I am moving to custom web development libraries to deliver the best layouts and better user experience to end users.</p>
+          <p>Hi There! I am a student of Software Engineering who persuaded interest in Web Development. I have been developing and customizing websites as a MERN & PERN stack dev for 2 years. 
+              <br/>Now I am learning Web3 stack to develop decentralized functionality for building our future more secure. My aim is to design custom content and a well structured web applications for end users.</p>
           <p>GRACIAS</p>
       </div>
       <div className='a-section'>
@@ -22,18 +23,10 @@ function About() {
             <div><BsWhatsapp className='a-icon'/> <p>+92 334 9526 462</p></div>
         </div>
         <div className='education'>
-            <h3>Languages</h3>
+            <h3>Tools</h3>
             <div>
                 <div>
                   <p>JavaScript</p>
-                </div>
-                <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'80%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
-                </div>
-            </div>
-            <div>
-                <div>
-                  <p>HTML</p>
                 </div>
                 <div className="progress-bar">
                   <motion.div initial={{width:'0px'}} animate={{width:'90%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
@@ -41,7 +34,7 @@ function About() {
             </div>
             <div>
                 <div>
-                  <p>CSS</p>
+                  <p>HTML & CSS</p>
                 </div>
                 <div className="progress-bar">
                   <motion.div initial={{width:'0px'}} animate={{width:'90%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
@@ -52,23 +45,31 @@ function About() {
                   <p>SQL</p>
                 </div>
                 <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'95%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
-                </div>
-            </div>
-            <div>
-                <div>
-                  <p>JAVA</p>
-                </div>
-                <div className="progress-bar">
                   <motion.div initial={{width:'0px'}} animate={{width:'90%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
                 </div>
             </div>
             <div>
                 <div>
-                  <p>C++</p>
+                  <p>Mongo DB</p>
                 </div>
                 <div className="progress-bar">
                   <motion.div initial={{width:'0px'}} animate={{width:'80%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
+                </div>
+            </div>
+            <div>
+                <div>
+                  <p>Ethers JS</p>
+                </div>
+                <div className="progress-bar">
+                  <motion.div initial={{width:'0px'}} animate={{width:'50%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
+                </div>
+            </div>
+            <div>
+                <div>
+                  <p>Solidity / Hardhat</p>
+                </div>
+                <div className="progress-bar">
+                  <motion.div initial={{width:'0px'}} animate={{width:'70%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
                 </div>
             </div>
         </div>
@@ -80,7 +81,7 @@ function About() {
                   <p>React JS</p>
                 </div>
                 <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'80%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
+                  <motion.div initial={{width:'0px'}} animate={{width:'90%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
                 </div>
             </div>
             <div>
@@ -88,7 +89,7 @@ function About() {
                   <p>Express Js</p>
                 </div>
                 <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'65%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
+                  <motion.div initial={{width:'0px'}} animate={{width:'85%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
                 </div>
             </div>
             <div>
@@ -101,7 +102,7 @@ function About() {
             </div>
             <div>
                 <div>
-                  <p>OOP & Data Structures</p>
+                  <p>IPFS</p>
                 </div>
                 <div className="progress-bar">
                   <motion.div initial={{width:'0px'}} animate={{width:'90%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
@@ -109,10 +110,10 @@ function About() {
             </div>
             <div>
                 <div>
-                  <p>WordPress</p>
+                  <p>Thirdweb SDK</p>
                 </div>
                 <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'95%', transition:{duration:.9, delay:1}}} className="proress-value" ></motion.div>
+                  <motion.div initial={{width:'0px'}} animate={{width:'75%', transition:{duration:.9, delay:1}}} className="proress-value" ></motion.div>
                 </div>
             </div>
             <div>
@@ -120,7 +121,7 @@ function About() {
                   <p>Github</p>
                 </div>
                 <div className="progress-bar">
-                  <motion.div initial={{width:'0px'}} animate={{width:'70%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
+                  <motion.div initial={{width:'0px'}} animate={{width:'80%', transition:{duration:.9, delay:1}}} className="proress-value"></motion.div>
                 </div>
             </div>
 

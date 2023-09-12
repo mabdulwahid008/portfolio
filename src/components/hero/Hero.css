@@ -1,5 +1,5 @@
 .aside{
-    height: 627px;
+    height: 100vh;
     position: fixed;
     top: 0;
     width: 70px;
@@ -213,7 +213,7 @@ label{
 
   @media screen and (max-width: 768px) {
       .aside{
-          height: 800px;
+          height: 100vh;
       }
       .color-palette{
           background-color: var(--black);
