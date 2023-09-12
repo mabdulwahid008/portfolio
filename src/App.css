@@ -6,7 +6,7 @@
     --baseColor:black;
     --black : rgb(12, 12, 12);
     --white : rgb(245, 245, 245);
-    --yellow : #1cda91;
+    --yellow : rgb(255, 0, 85);
     /* --yellow : #D7B941; */
     --styleFont : 'Playfair Display SC', serif;
     --headingFont : 'Noto Serif', serif;
